@@ -3,9 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Pho-Qing | A food experience with pho, bánh mì, and more!">
+    <title>Pho Qing</title>
+    <!-- CSS om du vill göra extärn ignorera annars -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font som chat GPT sa va rätt, men ser inte rätt ut, feel free att ändra om det går bra  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+  
+    <!-- Toppen av sidan -->
+    <header class="header">
+        <div class="logo">  
+            <h1>Pho - Qing</h1>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#home">Hem</a></li>
+                <li><a href="#menu">Vår meny</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="order-button">
+            <a href="#contact" class="btn">Ring och beställ</a>
+        </div>
+    </header>
+
+    <!-- Bilden o texten framför bilden -->
+
+    <section id="home" class="hero-section" style="background-image: url(images/Pho-Qing.jpg); background-size: cover; background-position: center; height: 400px; display: flex; align-items: center; justify-content: center; color: #000000; text-align: center;"></section>
+    <div class="hero-content">
+        <h2 class="hero-title">Pho - Qing</h2>
+        <p class="hero-subtitle">En matupplevelse utöver det vanliga</p>
+    </div>
+</section>
+
+
+    <!-- Välkommen texten -->
+    <section class="welcome-section"> 
+        <div class="container">
+            <h2>Välkommen till Pho-king!</h2>
+            <p>
+                Här serverar vi pho-skräddarsydd god mat med extra mycket smak och skoj! <br>
+                Glöm stela middagar – här sörplar du nudlar som om ingen ser och knaprar bánh mì som om det var en sista måltid(Spoiler:Det är det inte.)<br>
+                Så släpp loss, klicka dig in på menyn och låt din mage bestämma-den har bra smak
+            </p>
+        </div>
+    </section>
+
+    <!-- Veckans specialrätter -->
+    <section id="menu" class="specials-section">
+        <div class="container">
+            <h2>Veckans specialrätter</h2>
+            <div class="specials-grid">
+                <!-- Rätt 1 -->
+                <div class="dish-card">
+                    <img src="https://via.placeholder.com/200" alt="Klassisk Pho">
+                    <h3>Klassisk Pho</h3>
+                    <p>En skål med varm aromatiskt tröst-som en kram från en vietnamesisk farmor du aldrig visste att du hadde.</p>
+                    <span class="price">145 kr</span>
+                </div>
+                <!-- Rätt 2 -->
+                <div class="dish-card">
+                    <img src="https://via.placeholder.com/200" alt="Bánh mì">
+                    <h3>Bánh mì</h3>
+                    <p>En baguette med så mycket smak att den borde ha en egen reakityshow.</p>
+                    <span class="price">145 kr</span>
+                </div>
+                <!-- Rätt 3 -->
+                <div class="dish-card">
+                    <img src="https://via.placeholder.com/200" alt="Bánh xèo">
+                    <h3>Bánh xèo</h3>
+                    <p>Krispig pannkaka fylld med så mycket gott att du kommer undra hur allt fick plats.</p>
+                    <span class="price">145 kr</span>
+                </div>
+                <!-- Rätt 4 -->  
+                <div class="dish-card">
+                    <img src="https://via.placeholder.com/200" alt="Bubble Tea">
+                    <h3>Bubble Tea</h3>
+                    <p>Drick, tugga, fundera på livets mysterier-allt i ett glas.</p>
+                    <span class="price">145 kr</span>
+                </div>
+            </div> 
+        </div>
+    </section>   
+  
+    <!-- Kontakta oss --> 
+    <section id="contact" class="contact-section"> 
+        <div class="container">
+            <div class="contact-info">
+                <div>
+                    <h3>Ring nu för att beställa</h3>
+                    <p><i class="fas fa-phone"></i> 08 789 786 76</p>
+                </div>
+                <div>
+                    <h3>Öppettider</h3>
+                    <ul>
+                        <li>Måndag - Lördag: 11-21</li>
+                        <li>Söndag: Stängt</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Kontaktinformation</h3>
+                    <p><i class="fas fa-envelope"></i> pho-qing@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Stora Kallavägen 10, 126 78 Kallastaden</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maps, behövde inte va länk, tror bild funka -->
+    <section class="map-section">
+        <img src="https://via.placeholder.com/1200x300" alt="Map" class="map-image">
+    </section>
+
+    <!-- Längst ner -->
+    <footer class="footer">
+        <div class="container">
+            <h3>Pho - Qing</h3>
+            <a href="#contact" class="btn">Ring och beställ</a>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
