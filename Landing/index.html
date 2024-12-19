@@ -3,131 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pho-Qing | A food experience with pho, bánh mì, and more!">
-    <title>Pho Qing</title>
-    <!-- CSS om du vill göra extärn ignorera annars -->
+    <meta name="description" content="Pho-Qing | En matupplevelse utöver det vanliga med pho, bánh mì och andra rätter.">
+    <title>Pho - Qing</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Font som chat GPT sa va rätt, men ser inte rätt ut, feel free att ändra om det går bra  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  
-    <!-- Toppen av sidan -->
-    <header class="header">
-        <div class="logo">  
-            <h1>Pho - Qing</h1>
-        </div>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="#home">Hem</a></li>
-                <li><a href="#menu">Vår meny</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
-        <div class="order-button">
-            <a href="#contact" class="btn">Ring och beställ</a>
-        </div>
-    </header>
-
-    <!-- Bilden o texten framför bilden -->
-
-    <section id="home" class="hero-section" style="background-image: url(images/Pho-Qing.jpg); background-size: cover; background-position: center; height: 400px; display: flex; align-items: center; justify-content: center; color: #000000; text-align: center;"></section>
-    <div class="hero-content">
-        <h2 class="hero-title">Pho - Qing</h2>
-        <p class="hero-subtitle">En matupplevelse utöver det vanliga</p>
-    </div>
-</section>
-
-
-    <!-- Välkommen texten -->
-    <section class="welcome-section"> 
-        <div class="container">
-            <h2>Välkommen till Pho-king!</h2>
-            <p>
-                Här serverar vi pho-skräddarsydd god mat med extra mycket smak och skoj! <br>
-                Glöm stela middagar – här sörplar du nudlar som om ingen ser och knaprar bánh mì som om det var en sista måltid(Spoiler:Det är det inte.)<br>
-                Så släpp loss, klicka dig in på menyn och låt din mage bestämma-den har bra smak
-            </p>
-        </div>
-    </section>
-
-    <!-- Veckans specialrätter -->
-    <section id="menu" class="specials-section">
-        <div class="container">
-            <h2>Veckans specialrätter</h2>
-            <div class="specials-grid">
-                <!-- Rätt 1 -->
-                <div class="dish-card">
-                    <img src="https://via.placeholder.com/200" alt="Klassisk Pho">
-                    <h3>Klassisk Pho</h3>
-                    <p>En skål med varm aromatiskt tröst-som en kram från en vietnamesisk farmor du aldrig visste att du hadde.</p>
-                    <span class="price">145 kr</span>
-                </div>
-                <!-- Rätt 2 -->
-                <div class="dish-card">
-                    <img src="https://via.placeholder.com/200" alt="Bánh mì">
-                    <h3>Bánh mì</h3>
-                    <p>En baguette med så mycket smak att den borde ha en egen reakityshow.</p>
-                    <span class="price">145 kr</span>
-                </div>
-                <!-- Rätt 3 -->
-                <div class="dish-card">
-                    <img src="https://via.placeholder.com/200" alt="Bánh xèo">
-                    <h3>Bánh xèo</h3>
-                    <p>Krispig pannkaka fylld med så mycket gott att du kommer undra hur allt fick plats.</p>
-                    <span class="price">145 kr</span>
-                </div>
-                <!-- Rätt 4 -->  
-                <div class="dish-card">
-                    <img src="https://via.placeholder.com/200" alt="Bubble Tea">
-                    <h3>Bubble Tea</h3>
-                    <p>Drick, tugga, fundera på livets mysterier-allt i ett glas.</p>
-                    <span class="price">145 kr</span>
-                </div>
-            </div> 
-        </div>
-    </section>   
-  
-    <!-- Kontakta oss --> 
-    <section id="contact" class="contact-section"> 
-        <div class="container">
-            <div class="contact-info">
-                <div>
-                    <h3>Ring nu för att beställa</h3>
-                    <p><i class="fas fa-phone"></i> 08 789 786 76</p>
-                </div>
-                <div>
-                    <h3>Öppettider</h3>
-                    <ul>
-                        <li>Måndag - Lördag: 11-21</li>
-                        <li>Söndag: Stängt</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Kontaktinformation</h3>
-                    <p><i class="fas fa-envelope"></i> pho-qing@gmail.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Stora Kallavägen 10, 126 78 Kallastaden</p>
-                </div>
+    <div class="landing-container">
+        <section class="hero-section">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/14085d0e6cb4a4d4aa54a6e14702d9840f6a7cd7dd940f4768b87c3f0f55356a?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="" class="hero-background" />
+          <nav class="nav-container">
+            <div class="brand-logo">Pho - Qing</div>
+            <div class="nav-links">
+              <a href="#home">Hem</a>
+              <a href="#menu">Vår meny</a>
+              <a href="#contact">Kontakt</a>
+              <button class="order-button">Ring och beställ</button>
             </div>
-        </div>
-    </section>
-
-    <!-- Maps, behövde inte va länk, tror bild funka -->
-    <section class="map-section">
-        <img src="https://via.placeholder.com/1200x300" alt="Map" class="map-image">
-    </section>
-
-    <!-- Längst ner -->
-    <footer class="footer">
-        <div class="container">
-            <h3>Pho - Qing</h3>
-            <a href="#contact" class="btn">Ring och beställ</a>
-            <div class="social-links">
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </nav>
+          <div class="hero-content">
+            <div class="hero-title-wrapper">
+              <h1 class="hero-title">Pho - Qing</h1>
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b4f0853efbbf8e8d68aa8c8dd3913b47992595bcfb98541f3cc3222d30f555f7?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="Restaurant logo" class="hero-logo" />
+              <p class="hero-subtitle">En matupplevelse utöver det vanliga</p>
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2be3470d93783a1860172939155d08cb0627ed8fee64109b13fc74c15d19f0c9?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="" class="hero-decoration" />
             </div>
-        </div>
-    </footer>
+          </div>
+        </section>
+      
+        <main class="main-content">
+          <section class="welcome-section">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/5b73db31ba1e8b160e7ebd4d9dc6d73e1dc97e85ba663d55f7413d6ce36c776c?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="" class="welcome-decoration-left" />
+            <div class="welcome-content">
+              <h2 class="welcome-title">Välkommen till Pho - Qing!</h2>
+              <p class="welcome-description">
+                Här serverar vi pho-skräckligt god mat med extra mycket smak och skoj!<br /><br />
+                Glöm stela middagar – här sörplar du nudlar som om ingen ser och knaprar bánh mì som om det vore din sista måltid (spoiler: det är det inte).<br /><br />
+                Så släpp loss, klicka dig in på menyn och låt din mage bestämma – den har bra smak.
+              </p>
+            </div>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc3d91ca385669d4c365188f8baf2d3e9033830eae4e91f1424b0792f976e8c8?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="" class="welcome-decoration-right" />
+          </section>
+      
+          <section class="specials-header">
+            <h2 class="specials-title">Veckans specialrätter</h2>
+            <a href="#menu" class="menu-link">
+              <span class="menu-link-text">Se hela menyn</span>
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/944226768a58a7a505c4633c645ea63dc2df869129238ffb1285fbede92e6ead?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="" class="menu-link-icon" />
+            </a>
+          </section>
+      
+          <div class="specials-grid">
+            <article class="special-item">
+              <div class="special-image-wrapper">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a5d9b518cb0ff383725ab744f6c51f3b5308a9a601579e113a7074c83acfca4f?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="Klassisk Pho" class="special-image" />
+                <div class="special-price">145 kr</div>
+              </div>
+              <h3 class="special-title">Klassisk Pho</h3>
+              <p class="special-description">En skål med varm, aromatisk tröst – som en kram från en vietnamesisk farmor du aldrig visste att du hade.</p>
+            </article>
+      
+            <article class="special-item">
+              <div class="special-image-wrapper">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5967508973d818310ef47e46c45021bd3bef6d707c5c1663a52f82bd4e84efb?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="Bánh mì" class="special-image" />
+                <div class="special-price">145 kr</div>
+              </div>
+              <h3 class="special-title">Bánh mì</h3>
+              <p class="special-description">En baguette med så mycket smak att den borde ha en egen realityshow.</p>
+            </article>
+      
+            <article class="special-item">
+              <div class="special-image-wrapper">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e4cd9966f6d9369e1c3be4a11c3eb8a05b34d5b0bf6efbd6a00a2f35407a33f3?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="Bánh xèo" class="special-image" />
+                <div class="special-price">145 kr</div>
+              </div>
+              <h3 class="special-title">Bánh xèo</h3>
+              <p class="special-description">Krispig pannkaka fylld med så mycket gott att du kommer undra hur allt fick plats.</p>
+            </article>
+      
+            <article class="special-item">
+              <div class="special-image-wrapper">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4ea4ef154de7007a45c312ce95e8521973cd1183e2014518b9e4fb88e66e1aeb?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="Bubble Tea" class="special-image" />
+                <div class="special-price">145 kr</div>
+              </div>
+              <h3 class="special-title">Bubble Tea</h3>
+              <p class="special-description">Drick, tugga, fundera på livets mysterier – allt i ett glas.</p>
+            </article>
+          </div>
+      
+          <section class="contact-section">
+            <h2 class="contact-title">Kontakta oss</h2>
+            <div class="contact-grid">
+              <div class="contact-item">
+                <h3 class="contact-item-title">Ring nu för att beställa</h3>
+                <a href="tel:0878978676" class="contact-phone">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2b70971adb7c1fb03e4ad3600261f780ee92db2f7c43baec6ce91d1cf5a8a43a?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="" class="phone-icon" />
+                  <span>08 789 786 76</span>
+                </a>
+              </div>
+      
+              <div class="contact-item">
+                <h3 class="contact-item-title">Öppettider</h3>
+                <div class="hours-grid">
+                  <div>Måndag - Lördag:</div><div>11-21</div>
+                  <div>Söndag:</div><div>Stängt</div>
+                </div>
+              </div>
+      
+              <div class="contact-item">
+                <h3 class="contact-item-title">Kontaktinformation</h3>
+                <div class="contact-info">
+                  <a href="mailto:Pho-qing@gmail.com" class="contact-info-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/cabcfe72ce8daa27d70afb1471df95dcce92abcece1232a4406c22fcb6527d8c?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="" class="contact-icon" />
+                    <span>Pho-qing@gmail.com</span>
+                  </a>
+                  <div class="contact-info-item">
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d44a72677c1394717e7f59040dd6c986a17118e16afdbd37e28dfb9819f6c69d?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="" class="contact-icon" />
+                    <div>
+                      <div>Stora kalasvägen 10</div>
+                      <div>126 78 Kalasstaden</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c3a0fd7107d16f591ebc48f8c851cfd42ae5677e5d2f69a046982d6074ec72db?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="" class="footer-decoration" />
+      
+        <footer class="footer">
+          <div class="footer-brand">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/510027616fc96d61bd6832f766febb77e9294063710c70601d0b88616db52e4d?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="" class="footer-logo" />
+            <div class="footer-brand-text">Pho - Qing</div>
+          </div>
+          <div class="footer-cta">
+            <button class="footer-button">Ring och beställ</button>
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/85fbc2bb4eca48d337609c417b4f99041b14582db72768ae3eb23ae69e203425?placeholderIfAbsent=true&apiKey=66d9fec720f64819bcf05df50cedd4d2" alt="Social media links" class="footer-social" />
+          </div>
+        </footer>
+      </div>
+    
 
 </body>
 </html>
